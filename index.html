@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://smtpjs.com/v2/smtp.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Carol Navya Pagolu" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Carol Navya Pagolu">Carol Navya Pagolu</h1>
+          <p class="title">Software developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:carolnavya1999@gmail.com" class="contact-link">carolnavya1999@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIN</p>
+
+              <a href="https://www.linkedin.com/in/carolnavya/" class="contact-link">linkedin.com/in/carolnavya</a>
+            </div>
+          </li>
+           </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/carolnavya" class="contact-link">github.com/carolnavya</a>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p align="justify">
+            I'm a passionate software developer and machine learning enthusiast with a 
+            knack for transforming complex challenges into innovative solutions. 
+          </p>
+          <p align="justify"> Armed with a Master's degree in Computer Science and a toolbox filled with Python, Java, 
+            and a multitude of other languages and tools, I thrive in the ever-evolving tech landscape.
+          </p>
+          <p align="justify">
+            What truly fuels my enthusiasm? It's those 'Eureka!' moments when we find unique solutions
+             that enhance efficiency and elevate user experiences. I'm on a relentless quest to continue pushing boundaries,
+              collaborating with dynamic teams, and making a real impact.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+               
+                <img src="./assets/images/ai-logoo.png" alt="Web development icon" width="40">
+                
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Applied AI</h4>
+
+                <p class="service-item-text">
+                  Crafting intelligent solutions for real-world challenges through machine learning and data-driven innovations.
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software development</h4>
+
+                <p class="service-item-text">
+                  Building digital solutions that empower businesses and users through code-driven creativity and problem-solving.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Florida</h4>
+
+              <span>December 2022</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Geethanjali College of Engineering & Technology</h4>
+
+              <span>September 2020</span>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer</h4>
+              <span>QualApps</span>
+              <span>Januay 2023 — Present</span>
+              <p class="timeline-text">Migrate data from OracleDB to PostgreSQL, build robust APIs, ensure data integrity, and improve code quality, enhancing system efficiency and reliability while reducing errors and defects.</p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lead Software Developer (Graduate Research Assistant)</h4>
+              <span>NSF Center for Space, High-performance, and Resilient Computing at University of Florida</span>
+              <span>December 2021 - Present</span>
+              <p class="timeline-text">Leading a team of 5 to create a user-friendly AI web application, simplifying end-to-end AI workflows, developing Microservices for easy data analysis, training and streamlining model serving with real-time monitoring for optimal performance and issue resolution.</p>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer (Graduate Student Assistant)</h4>
+              <span>Department of Microbiology and Cell Science at University of Florida</span>
+              <span>May 2021 - December 2021</span>
+              <p class="timeline-text">Created a standalone workflow optimization desktop tool for efficient data querying and developed an innovative Deep Learning Model (GAN) to enhance worm DNA particle count accuracy by 86%, boosting research efficiency and accuracy.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Machine Learning Research Intern</h4>
+              <span>National Institute of Agricultural Extension Management </span>
+              <span>May 2019 — July 2019</span>
+              <p class="timeline-text">Collaborated with data modeling experts to implement scalable Scikit-learn-based Machine Learning models, increasing crop yield by 25%, and enhanced data quality and extraction processes through data ingestion pipelines and transformation scripts.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Languages: </h5>
+                <data>Python, Java, C, Go, C#</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Databases: </h5>
+                <data>MySQL, SQL, PL/SQL, PostgreSQL, MongoDB</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">AI: </h5>
+                <data>Pandas, NumPy, Scikit-Learn, TensorFlow, PyTorch, Open-CV, NLTK, SpaCy, RASA</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web: </h5>
+                <data>HTML5, CSS, PHP, JavaScript, Flask, React, JSON, REST, ASP .Net </data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Tools: </h5>
+                <data>Git, Docker, Kubernetes, AWS, Postman, Swagger, Prometheus, Grafana, Horovod, Dask, Modin, Ray </data>
+              </div>
+            </li>
+          </ul>
+          <br>
+          <button class="form-btn" type="submit" onclick="window.location.href='assets/files/CarolNavya-sde-resume.pdf';" data-form-btn>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download Resume</span>
+          </button>
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>SDE</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>SDE</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="ai">
+              <a href="https://github.com/carolnavya/KAWAI-meeting-scheduling-chatbot">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/kawai-chatbot.png" alt="alden-chatbot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">KAWAI Meeting Scheduler</h3>
+
+                <p class="project-category">NLU, Python, RASA</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sde">
+              <a href="https://github.com/Monicakodali/SEPROJECT">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/uf-yelp.png" alt="uf-yelp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">UF YELP</h3>
+
+                <p class="project-category">Typescript, Go</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sde">
+              <a href="https://github.com/carolnavya/Bitcoin-Hashing">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/bitcoin-hashing.png" alt="bitcoin-hashing" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Bitcoin Hashing</h3>
+
+                <p class="project-category">F#</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="sde">
+              <a href="https://github.com/carolnavya/sms-alert-system">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sms-alert-system.png" alt="sms-alert-system" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SMS Alert System</h3>
+
+                <p class="project-category">Python, AWS Services</p>
+
+              </a>
+            </li>
+
+          
+            <li class="project-item  active" data-filter-item data-category="ai">
+              <a href="https://github.com/carolnavya/Alden-chatbot">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/alden-chatbot.png" alt="alden-chatbot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Alden Chatbot</h3>
+
+                <p class="project-category">NLP, Python</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
